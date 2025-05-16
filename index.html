@@ -6,19 +6,23 @@
     <title>Ena & Francisco</title>
     <!--Tailwind-->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+    <!--font-->
     <style>
-      @font-face {
-        font-family: 'Playfair Display';
-            src: url('assets/fonts/playfairdisplay/static/PlayfairDisplay-Regular.ttf') format('truetype');
-            font-weight: normal;
-            font-style: normal;
-            font-display: swap;
+      .playfair-display {
+        font-family: 'PLayfair Display', sans-serif;
+      }
+      .cal-sans {
+        font-family: 'Cal sans', sans-serif;
       }
     </style>
   </head>
   <body class="bg-[#D6D6D6]">
     <div
-      style="font-family: 'PlayfairDisplay-Regular', serif;"
       class="photo-container relative h-screen bg-[url(assets/img/img-photo-2.webp)] bg-center bg-cover"
     >
       <div class="absolute inset-0 bg-black opacity-50"></div>
@@ -26,21 +30,64 @@
         class="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center"
       >
         <h1 
-        class="text-white font-thin text-center text-6xl">
+        class=" playfair-display text-white font-thin text-center text-6xl">
           FRANCISCO
           <br />
-          &
+          Y
           <br />
           ENA
         </h1>
+        <img class="w-30" src="assets/img/logo iniciales F & E.png" alt="">
       </div>
     </div>
     <div class="bg-[#d6d6d6]">
       <div class="text-center text-3xl flex flex-col items-center justify-center px-5 gap-10 my-20">
-        <h2 class="">Tenemos el honor de invitarlos a celebrar nuestro 25° aniversario el día</h2>
-        <p class="text-5xl font-thin mt-20">JUL <span class="text-white font-semibold">|</span> <span class="text-[#545454]">05</span> <span class="text-white font-semibold">|</span>  2025</p>
+        <h2 class="playfair-display">TENEMOS EL HONOR DE INVITARLOS A CELEBRAR NUESTRO 25° ANIVERSARIO EL DÍA</h2>
+        <p class="playfair-display text-5xl font-thin mt-5">Jul <span class="text-white font-semibold">|</span> <span class="text-[#545454]">05</span> <span class="text-white font-semibold">|</span>  2025</p>
       </div>
-      
     </div>
+    <div class="frase flex flex-col items-center justify-center text-center text-white bg-[url(assets/img/frase-img.jpg)] bg-cover bg-center py-10">
+      <img src="" alt="">
+      <p class="px-5 playfair-display">«a donde tú vayas, iré yo; y donde tú vivas, viviré yo;
+          tu pueblo será mi pueblo y tu Dios será mi Dios.
+          Donde tú mueras, allí también quiero morir y ser
+          enterrada yo. Que el Señor me castigue como es
+          debido si no es la muerte la que nos separe.»
+      </p>
+      <br>
+      <p class="playfair-display">ruth <br> 1:16-17
+      </p>
+    </div>
+    <div class="itinerario-content">
+      <h2 class="playfair-display tracking-widest mt-20 mb-5 text-center text-5xl text-[#a4a89b]">ITINERARIO</h2>
+        <div class="bg-[#a4a89b] py-10 text-center text-white flex items-center flex-col justify-center">
+          <h2 class="playfair-display pb-10 text-8xl">01</h2>
+          <img class="w-80 mb-5" src="assets/img/iglesia-img.jpg" alt="quinta">
+          <hr class="w-[350px] border-0 border-t-1 mx-auto my-4">
+          <p class="text-3xl mb-5 tracking-widest">CEREMONIA</p>
+          <p class="text-3xl mb-10">5:00pm</p>
+          <a class="px-15 py-2 border" href="https://maps.app.goo.gl/hHU8LNNyGYsDedtFA">UBICACIÓN</a>
+          <h2 class="playfair-display py-10 text-8xl">02</h2>
+          <img class="w-80 mb-5" src="assets/img/quinta-img.jpg" alt="quinta">
+          <hr class="w-[350px] border-0 border-t-1 mx-auto my-4">
+          <p class="text-3xl mb-5">Quinta Ulibarri</p>
+          <p class="text-3xl mb-10">7:00pm</p>
+          <a class="px-15 py-2 border" href="https://maps.app.goo.gl/JChWHJyZdJTsaPxd8">UBICACIÓN</a>
+        </div>
+        <div class="relative">
+          <img class="w-full h-50 object-center object-cover" src="assets/img/dresscode-img.jpg" alt="dresscode">
+          <div class="absolute bottom-0 left-0 w-full  z-10 transform translate-y-5">
+            <h2 class="cal-sans text-center text-white text-5xl font-bold">dresscode.</h2>
+          </div>
+        </div>
+        <div class="bg-[#a4a89b] text-center text-white playfair-display py-12">
+          <h4 class="text-4xl">MUJERES</h4>
+          <p class="mt-5 text-3xl">FORMAL</p>
+          <p class="mt-5 mb-10 text-3xl">COLORES: <br>(NO BLANCO NI VERDE)</p>
+          <hr class="w-[350px] border-0 border-t-1 mx-auto my-4">
+          <h4 class="mt-10 text-4xl">HOMBRES</h4>
+        </div>
+    </div>
+    
   </body>
 </html>
